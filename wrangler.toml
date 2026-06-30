@@ -1,0 +1,7 @@
+name = "happy-bot"
+main = "index.js"
+compatibility_date = "2026-06-30"
+
+kv_namespaces = [
+  { binding = "USED_VIDEOS" }
+]
