@@ -4,6 +4,7 @@ import test from 'node:test';
 import {
   YT_SHORT_KEYWORDS,
   buildYtShortSearchQuery,
+  handleYtShortCommand,
   selectYtShortKeyword,
 } from '../commands/ytshort.js';
 
@@ -38,4 +39,25 @@ test('ytshort search query forces funny family-friendly shorts', () => {
     decodeURIComponent(buildYtShortSearchQuery('cats')),
     'cats funny clean family friendly #shorts',
   );
+});
+
+test('ytshort command responds only to the requesting user', async () => {
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async () => ({
+    async json() {
+      return { items: [] };
+    },
+  });
+
+  try {
+    assert.deepEqual(
+      await handleYtShortCommand({}, { YOUTUBE_API_KEY: 'test' }),
+      {
+        content: '⚠️ No new shorts found matching the random query. Try again!',
+        flags: 64,
+      },
+    );
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
 });

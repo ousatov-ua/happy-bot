@@ -32,6 +32,10 @@ export function buildYtShortSearchQuery(keyword) {
   return encodeURIComponent(`${keyword} funny clean family friendly #shorts`);
 }
 
+function privateYtShortResponse(content) {
+  return { content, flags: 64 };
+}
+
 export async function handleYtShortCommand(interaction, env) {
   const randomWord = selectYtShortKeyword();
   const searchQuery = buildYtShortSearchQuery(randomWord);
@@ -43,7 +47,9 @@ export async function handleYtShortCommand(interaction, env) {
     const ytData = await ytResponse.json();
 
     if (!ytData.items || ytData.items.length === 0) {
-      return '⚠️ No new shorts found matching the random query. Try again!';
+      return privateYtShortResponse(
+        '⚠️ No new shorts found matching the random query. Try again!',
+      );
     }
 
     let chosenVideoId = null;
@@ -61,9 +67,13 @@ export async function handleYtShortCommand(interaction, env) {
     }
 
     await env.USED_VIDEOS.put(chosenVideoId, 'true');
-    return `🎬 ho-ho:\nhttps://youtube.com/shorts/${chosenVideoId}`;
+    return privateYtShortResponse(
+      `🎬 ho-ho:\nhttps://youtube.com/shorts/${chosenVideoId}`,
+    );
   } catch (error) {
     console.log(`Exception while handleYtShortCommand: ${error}`);
-    return '⚠️ Failed to fetch from YouTube. Please try again later.';
+    return privateYtShortResponse(
+      '⚠️ Failed to fetch from YouTube. Please try again later.',
+    );
   }
 }
