@@ -2,13 +2,12 @@
 
 ## Register a new command
 
+Bulk overwrite Discord commands after command schema changes:
+
 ```sh
-curl -X POST \
+curl --fail-with-body -X PUT \
   -H "Authorization: Bot YOUR_BOT_TOKEN" \
   -H "Content-Type: application/json" \
-  -d '{
-    "name": "ytshort",
-    "description": "Get a random, age-safe YouTube Short link"
-  }' \
+  --data-binary @discord-commands.json \
   "https://discord.com/api/v10/applications/YOUR_APPLICATION_ID/commands"
 ```

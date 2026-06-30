@@ -3,5 +3,21 @@ main = "index.js"
 compatibility_date = "2026-06-30"
 
 kv_namespaces = [
-  { binding = "USED_VIDEOS" }
+  { binding = "USED_VIDEOS", id='<id_1>' },
+  { binding = "WISHES" , id="<id_2>"}
 ]
+
+[observability]
+enabled = false
+head_sampling_rate = 1
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+persist = true
+invocation_logs = true
+
+[observability.traces]
+enabled = false
+persist = true
+head_sampling_rate = 1

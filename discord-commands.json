@@ -1,0 +1,47 @@
+[
+  {
+    "name": "ping",
+    "description": "Check bot health"
+  },
+  {
+    "name": "hb",
+    "description": "Show the birthday card"
+  },
+  {
+    "name": "ytshort",
+    "description": "Send a funny YouTube Short"
+  },
+  {
+    "name": "wish",
+    "description": "Save a birthday wish",
+    "options": [
+      {
+        "name": "text",
+        "description": "З днем народження, Олег!",
+        "type": 3,
+        "required": true,
+        "max_length": 4000
+      }
+    ]
+  },
+  {
+    "name": "wishes",
+    "description": "Show birthday wishes"
+  },
+  {
+    "name": "wish-list-ids",
+    "description": "Show birthday wishes with ids"
+  },
+  {
+    "name": "wish-del",
+    "description": "Delete a birthday wish",
+    "options": [
+      {
+        "name": "id",
+        "description": "Wish id",
+        "type": 3,
+        "required": true
+      }
+    ]
+  }
+]
