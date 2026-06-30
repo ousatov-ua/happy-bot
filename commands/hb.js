@@ -69,6 +69,72 @@ export const HB_TEMPLATES = [
       'https://media.giphy.com/media/l1J9EdzfOSgfyueLm/giphy.gif',
     ],
   },
+  {
+    name: 'Birthday Raid',
+    title: '⚔️ Birthday raid victory',
+    description: [
+      'Raid boss defeated: ще один рік пройдено красиво.\\n\\nLoot:\\n🎂 святковий торт\\n🎁 купа сюрпризів\\n💛 люди поруч\\n✨ legendary mood\\n\\nОлежик, з днем народження!',
+      'Party cleared the birthday raid.\\n\\nОлежик отримує MVP за витримку, гумор і +1 до легендарності.\\n\\nНехай наступний рік буде easy mode з epic rewards.',
+    ],
+    images: [
+      'https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif',
+    ],
+  },
+  {
+    name: 'Birthday Patch Notes',
+    title: '🛠️ Birthday patch notes',
+    description: [
+      'Version Олежик+1 released.\\n\\nAdded:\\n✨ більше удачі\\n🎮 більше перемог\\n🍰 більше смачного\\n💛 більше тепла\\n\\nFixed: нестача святкового настрою.',
+      'Birthday update installed.\\n\\nBuffs:\\n+20 до енергії\\n+50 до радості\\n+100 до харизми\\n+999 до birthday power\\n\\nKnown issue: торт може швидко зникнути.',
+    ],
+    images: [
+      'https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif',
+    ],
+  },
+  {
+    name: 'Birthday Critical Hit',
+    title: '💥 Birthday critical hit',
+    description: [
+      'Critical hit по буденності!\\n\\nОлежик отримує день, повний сміху, тостів, подарунків і приємних дрібниць.\\n\\nЗ днем народження!',
+      'Birthday combo activated:\\n🎉 confetti strike\\n🎂 cake slash\\n🎁 gift burst\\n✨ happiness crit\\n\\nОлежик, хай сьогодні все попадає в ціль.',
+    ],
+    images: [
+      'https://media.giphy.com/media/xUPGcMzwkOY01nj6hi/giphy.gif',
+    ],
+  },
+  {
+    name: 'Birthday Co-op',
+    title: '🤝 Birthday co-op party',
+    description: [
+      'Co-op lobby зібрано.\\n\\nМісія команди: зробити день Олежика теплим, веселим і незабутнім.\\n\\nГотовність: 100%.',
+      'Олежик, сьогодні весь party chat бажає здоровʼя, радості, перемог і стабільного high roll у житті.\\n\\nЗ днем народження!',
+    ],
+    images: [
+      'https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif',
+    ],
+  },
+  {
+    name: 'Birthday Speedrun',
+    title: '⏱️ Birthday speedrun',
+    description: [
+      'Birthday speedrun route:\\n1. Прокинутись легендою\\n2. Прийняти привітання\\n3. Знайти торт\\n4. Насолодитись днем\\n\\nОлежик already PB.',
+      'New personal best unlocked: Олежик прожив ще один крутий рік.\\n\\nНаступний маршрут: більше щастя, менше турбот, більше перемог.',
+    ],
+    images: [
+      'https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif',
+    ],
+  },
+  {
+    name: 'Birthday Tavern',
+    title: '🍻 Birthday tavern quest',
+    description: [
+      'У таверні оголошено свято: сьогодні день Олежика.\\n\\nНехай бард співає голосніше, друзі сміються частіше, а рік приносить тільки добрі квести.',
+      'Quest giver каже:\\n\\n«Передайте Олежику здоровʼя, удачу, теплі обійми і торт».\\n\\nReward: щасливий рік попереду.',
+    ],
+    images: [
+      'https://media.giphy.com/media/BPJmthQ3YRwD6QqcVD/giphy.gif',
+    ],
+  },
 ];
 
 const HB_COLORS = [
@@ -80,8 +146,32 @@ const HB_COLORS = [
   0xf783ac,
 ];
 
+const HB_ALLOWED_USERS = new Set(['gamervacuum', 'oleksii.usatov']);
+const EPHEMERAL_RESPONSE = 64;
+
+function getUsername(interaction) {
+  return interaction.member?.user?.username
+    ?? interaction.user?.username
+    ?? interaction.member?.nick
+    ?? 'unknown';
+}
+
 function chooseRandom(items, random = Math.random) {
   return items[Math.floor(random() * items.length)];
+}
+
+function privateContent(content) {
+  return {
+    content,
+    flags: EPHEMERAL_RESPONSE,
+  };
+}
+
+function privateResponse(data) {
+  return {
+    ...data,
+    flags: EPHEMERAL_RESPONSE,
+  };
 }
 
 export function isJulyFirst(date = new Date(), timeZone = HB_TIME_ZONE) {
@@ -116,13 +206,18 @@ export function buildHbEmbed(random = Math.random) {
 }
 
 export async function handleHbCommand(interaction, env, context = {}) {
+  const user = getUsername(interaction);
+  if (!HB_ALLOWED_USERS.has(user)) {
+    return privateContent('⛔ You cannot use /hb.');
+  }
+
   const now = context.now ?? new Date();
   const timeZone = context.timeZone ?? env.HB_TIME_ZONE ?? HB_TIME_ZONE;
   if (!isJulyFirst(now, timeZone)) {
-    return '✨ Magic is coming. Check back on July 1.';
+    return privateContent('✨ Magic is coming. Check back on July 1.');
   }
 
-  return {
+  return privateResponse({
     embeds: [buildHbEmbed(context.random ?? Math.random)],
-  };
+  });
 }
