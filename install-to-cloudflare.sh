@@ -1,3 +1,4 @@
+# create a namespace
 wrangler kv namespace create USED_VIDEOS
 
 wrangler secret put DISCORD_PUBLIC_KEY --name happy-bot
