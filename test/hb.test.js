@@ -23,7 +23,7 @@ test('hb exposes twelve templates', () => {
     HB_TEMPLATES.map((template) => template.name),
     [
       'Birthday Card',
-      'Achievement Unlocked',
+      'Досягнення відкрито',
       'Birthday Loot',
       'Birthday Spell',
       'Birthday Mission',
@@ -36,6 +36,54 @@ test('hb exposes twelve templates', () => {
       'Birthday Tavern',
     ],
   );
+});
+
+test('hb descriptions render real line breaks', () => {
+  for (const template of HB_TEMPLATES) {
+    for (const description of template.description) {
+      assert.doesNotMatch(description, /\\n/);
+    }
+  }
+});
+
+test('hb includes multiple achievement variants', () => {
+  const achievement = HB_TEMPLATES.find((template) => template.name === 'Досягнення відкрито');
+
+  assert.ok(achievement);
+  assert.equal(achievement.title, '🏆 Досягнення відкрито');
+  assert.equal(achievement.description.length, 8);
+  assert.match(achievement.description.join('\n'), /Досягнення відкрито/);
+  assert.match(achievement.description.join('\n'), /Платиновий трофей здобуто/);
+  assert.doesNotMatch(
+    achievement.description.join('\n'),
+    /\b(Achievement|Rewards|Level|Secret|Birthday|Stats|Rare|Patch|Platinum|trophy|unlocked|buff|status|GG)\b/i,
+  );
+});
+
+test('hb gifs are birthday celebration related', () => {
+  const verifiedBirthdayGifIds = new Set([
+    'IAXOTp0Q0hy8JpyYrb',
+    'nJM1KhLzwQDoNXuyhc',
+    'y5LmBG51luw2A0Llmj',
+    'QOv8jYIvgTaYzCl5fs',
+    'az6FZXG85pVyasjpgS',
+    '3yAHkX2oW98oWFmcR8',
+    'a8wmKpMbRDEllUZ464',
+    'Q0QSGW9vAs4l6S3CPd',
+    'ESR5LqfuZzN9usQhLk',
+    'VEKxys8zRowZaCTJ9C',
+    'DXhmNiA8F1i4fLnMdb',
+    'g5R9dok94mrIvplmZd',
+    'rrmf3fICPZWg1MMXOW',
+    '9rO5Aksmn0dHQKXJAu',
+  ]);
+
+  for (const template of HB_TEMPLATES) {
+    for (const image of template.images) {
+      const gifId = image.match(/\/media\/([^/]+)\//)?.[1];
+      assert.ok(verifiedBirthdayGifIds.has(gifId), `${template.name}: ${image}`);
+    }
+  }
 });
 
 test('hb date guard uses configured timezone', () => {

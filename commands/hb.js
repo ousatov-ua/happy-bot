@@ -9,20 +9,26 @@ export const HB_TEMPLATES = [
       'Олежик, хай цей день принесе торт, сміх і купу приємних сюрпризів.\n\nЗ днем народження!',
     ],
     images: [
-      'https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif',
-      'https://media.giphy.com/media/Im6d35ebkCIiGzonjI/giphy.gif',
+      'https://media.giphy.com/media/IAXOTp0Q0hy8JpyYrb/giphy.gif',
+      'https://media.giphy.com/media/nJM1KhLzwQDoNXuyhc/giphy.gif',
     ],
   },
   {
-    name: 'Achievement Unlocked',
-    title: '🏆 Achievement unlocked',
+    name: 'Досягнення відкрито',
+    title: '🏆 Досягнення відкрито',
     description: [
-      'Олежик став на 1 рік крутішим!\n\nRewards received:\n🎁 +100 радості\n🎂 +1 святковий торт\n🎮 +50 ігрової удачі\n✨ +999 birthday power\n\nЗ днем народження, Олежик!',
-      'Level up complete: Олежик отримав новий birthday-рівень!\n\nRewards received:\n🎁 +100 настрою\n🎂 +1 легендарний торт\n🧠 +25 мудрості\n✨ +999 birthday power\n\nЗ днем народження, Олежик!',
+      'Досягнення відкрито: Олежик став на 1 рік крутішим!\n\nНагороди отримано:\n🎁 +100 радості\n🎂 +1 святковий торт\n🎮 +50 ігрової удачі\n✨ +999 сили дня народження\n\nЗ днем народження, Олежик!',
+      'Новий рівень пройдено: Олежик отримав святковий рівень!\n\nНагороди отримано:\n🎁 +100 настрою\n🎂 +1 легендарний торт\n🧠 +25 мудрості\n✨ +999 сили дня народження\n\nЗ днем народження, Олежик!',
+      'Досягнення відкрито: ще одне коло навколо Сонця пройдено.\n\nОлежик отримує:\n🏅 рідкісний знак витримки\n🎂 запасний протокол торта\n🎁 сюрприз із високим шансом радості\n✨ постійне підсилення гарного настрою.',
+      'Досягнення відкрито: день головного героя.\n\nНагороди етапу:\n🏆 +1 до легендарності\n🎉 +100 до святкового шуму\n💛 +999 до підтримки друзів\n🍰 торт отримує найвищий пріоритет.',
+      'Таємне досягнення знайдено: торт за найкоротшим маршрутом.\n\nОлежик активував комбо:\n🎂 знайти торт\n🎁 прийняти подарунки\n😄 не приховувати усмішку\n✨ закріпити святковий статус на весь день.',
+      'Досягнення відкрито: бос дня народження.\n\nПоказники зросли:\n💪 сила святкування +20\n🧠 мудрість року +1\n🎮 удача в іграх +50\n💛 тепло від друзів +999\n\nОлежик, перемоги і з днем народження!',
+      'Рідкісне досягнення відкрито: жодних багів, тільки обійми.\n\nНагороди оновлення:\n🐛 баги перетворено на конфеті\n🤗 обійми додано до інвентаря\n🎂 перезарядку торта скасовано\n✨ святкова аура тепер видима.',
+      'Платиновий трофей здобуто: Олежик+1.\n\nБонуси завершення:\n🏆 етап пройдено\n🎁 скриню нагород відкрито\n🎉 режим свята увімкнено\n💛 добрі люди поруч\n\nНаступний рік відкрито.',
     ],
     images: [
-      'https://media.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.gif',
-      'https://media.giphy.com/media/3oz8xAFtqoOUUrsh7W/giphy.gif',
+      'https://media.giphy.com/media/y5LmBG51luw2A0Llmj/giphy.gif',
+      'https://media.giphy.com/media/QOv8jYIvgTaYzCl5fs/giphy.gif',
     ],
   },
   {
@@ -33,7 +39,7 @@ export const HB_TEMPLATES = [
       'Birthday chest unlocked:\n\n🎂 Cake x1\n🎉 Радість x100\n🎮 Удача x50\n💛 Теплі побажання x999\n\nОлежик, це твій день!',
     ],
     images: [
-      'https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif',
+      'https://media.giphy.com/media/az6FZXG85pVyasjpgS/giphy.gif',
     ],
   },
   {
@@ -44,7 +50,7 @@ export const HB_TEMPLATES = [
       'Магія дня народження спрацювала.\n\n+100 до настрою\n+100 до сил\n+100 до щасливих випадковостей\n\nОлежик, з днем народження!',
     ],
     images: [
-      'https://media.giphy.com/media/xTiTnEHBh7qapyuvwQ/giphy.gif',
+      'https://media.giphy.com/media/3yAHkX2oW98oWFmcR8/giphy.gif',
     ],
   },
   {
@@ -55,7 +61,7 @@ export const HB_TEMPLATES = [
       'Special quest unlocked for Олежик:\n\nMain quest: святкувати.\nSide quest: посміхатись.\nBonus objective: отримати торт.\n\nReward: легендарний рік попереду.',
     ],
     images: [
-      'https://media.giphy.com/media/3o6ZsUJ44ffpnAW7Dy/giphy.gif',
+      'https://media.giphy.com/media/a8wmKpMbRDEllUZ464/giphy.gif',
     ],
   },
   {
@@ -66,73 +72,73 @@ export const HB_TEMPLATES = [
       'Куля передбачень показує:\n\n🎂 торт поруч\n🎁 сюрпризи близько\n✨ удача активна\n💛 радість стабільна\n\nОлежик, хай так і буде!',
     ],
     images: [
-      'https://media.giphy.com/media/l1J9EdzfOSgfyueLm/giphy.gif',
+      'https://media.giphy.com/media/Q0QSGW9vAs4l6S3CPd/giphy.gif',
     ],
   },
   {
     name: 'Birthday Raid',
     title: '⚔️ Birthday raid victory',
     description: [
-      'Raid boss defeated: ще один рік пройдено красиво.\\n\\nLoot:\\n🎂 святковий торт\\n🎁 купа сюрпризів\\n💛 люди поруч\\n✨ legendary mood\\n\\nОлежик, з днем народження!',
-      'Party cleared the birthday raid.\\n\\nОлежик отримує MVP за витримку, гумор і +1 до легендарності.\\n\\nНехай наступний рік буде easy mode з epic rewards.',
+      'Raid boss defeated: ще один рік пройдено красиво.\n\nLoot:\n🎂 святковий торт\n🎁 купа сюрпризів\n💛 люди поруч\n✨ legendary mood\n\nОлежик, з днем народження!',
+      'Party cleared the birthday raid.\n\nОлежик отримує MVP за витримку, гумор і +1 до легендарності.\n\nНехай наступний рік буде easy mode з epic rewards.',
     ],
     images: [
-      'https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif',
+      'https://media.giphy.com/media/ESR5LqfuZzN9usQhLk/giphy.gif',
     ],
   },
   {
     name: 'Birthday Patch Notes',
     title: '🛠️ Birthday patch notes',
     description: [
-      'Version Олежик+1 released.\\n\\nAdded:\\n✨ більше удачі\\n🎮 більше перемог\\n🍰 більше смачного\\n💛 більше тепла\\n\\nFixed: нестача святкового настрою.',
-      'Birthday update installed.\\n\\nBuffs:\\n+20 до енергії\\n+50 до радості\\n+100 до харизми\\n+999 до birthday power\\n\\nKnown issue: торт може швидко зникнути.',
+      'Version Олежик+1 released.\n\nAdded:\n✨ більше удачі\n🎮 більше перемог\n🍰 більше смачного\n💛 більше тепла\n\nFixed: нестача святкового настрою.',
+      'Birthday update installed.\n\nBuffs:\n+20 до енергії\n+50 до радості\n+100 до харизми\n+999 до birthday power\n\nKnown issue: торт може швидко зникнути.',
     ],
     images: [
-      'https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif',
+      'https://media.giphy.com/media/VEKxys8zRowZaCTJ9C/giphy.gif',
     ],
   },
   {
     name: 'Birthday Critical Hit',
     title: '💥 Birthday critical hit',
     description: [
-      'Critical hit по буденності!\\n\\nОлежик отримує день, повний сміху, тостів, подарунків і приємних дрібниць.\\n\\nЗ днем народження!',
-      'Birthday combo activated:\\n🎉 confetti strike\\n🎂 cake slash\\n🎁 gift burst\\n✨ happiness crit\\n\\nОлежик, хай сьогодні все попадає в ціль.',
+      'Critical hit по буденності!\n\nОлежик отримує день, повний сміху, тостів, подарунків і приємних дрібниць.\n\nЗ днем народження!',
+      'Birthday combo activated:\n🎉 confetti strike\n🎂 cake slash\n🎁 gift burst\n✨ happiness crit\n\nОлежик, хай сьогодні все попадає в ціль.',
     ],
     images: [
-      'https://media.giphy.com/media/xUPGcMzwkOY01nj6hi/giphy.gif',
+      'https://media.giphy.com/media/DXhmNiA8F1i4fLnMdb/giphy.gif',
     ],
   },
   {
     name: 'Birthday Co-op',
     title: '🤝 Birthday co-op party',
     description: [
-      'Co-op lobby зібрано.\\n\\nМісія команди: зробити день Олежика теплим, веселим і незабутнім.\\n\\nГотовність: 100%.',
-      'Олежик, сьогодні весь party chat бажає здоровʼя, радості, перемог і стабільного high roll у житті.\\n\\nЗ днем народження!',
+      'Co-op lobby зібрано.\n\nМісія команди: зробити день Олежика теплим, веселим і незабутнім.\n\nГотовність: 100%.',
+      'Олежик, сьогодні весь party chat бажає здоровʼя, радості, перемог і стабільного high roll у житті.\n\nЗ днем народження!',
     ],
     images: [
-      'https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif',
+      'https://media.giphy.com/media/g5R9dok94mrIvplmZd/giphy.gif',
     ],
   },
   {
     name: 'Birthday Speedrun',
     title: '⏱️ Birthday speedrun',
     description: [
-      'Birthday speedrun route:\\n1. Прокинутись легендою\\n2. Прийняти привітання\\n3. Знайти торт\\n4. Насолодитись днем\\n\\nОлежик already PB.',
-      'New personal best unlocked: Олежик прожив ще один крутий рік.\\n\\nНаступний маршрут: більше щастя, менше турбот, більше перемог.',
+      'Birthday speedrun route:\n1. Прокинутись легендою\n2. Прийняти привітання\n3. Знайти торт\n4. Насолодитись днем\n\nОлежик already PB.',
+      'New personal best unlocked: Олежик прожив ще один крутий рік.\n\nНаступний маршрут: більше щастя, менше турбот, більше перемог.',
     ],
     images: [
-      'https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif',
+      'https://media.giphy.com/media/rrmf3fICPZWg1MMXOW/giphy.gif',
     ],
   },
   {
     name: 'Birthday Tavern',
     title: '🍻 Birthday tavern quest',
     description: [
-      'У таверні оголошено свято: сьогодні день Олежика.\\n\\nНехай бард співає голосніше, друзі сміються частіше, а рік приносить тільки добрі квести.',
-      'Quest giver каже:\\n\\n«Передайте Олежику здоровʼя, удачу, теплі обійми і торт».\\n\\nReward: щасливий рік попереду.',
+      'У таверні оголошено свято: сьогодні день Олежика.\n\nНехай бард співає голосніше, друзі сміються частіше, а рік приносить тільки добрі квести.',
+      'Quest giver каже:\n\n«Передайте Олежику здоровʼя, удачу, теплі обійми і торт».\n\nReward: щасливий рік попереду.',
     ],
     images: [
-      'https://media.giphy.com/media/BPJmthQ3YRwD6QqcVD/giphy.gif',
+      'https://media.giphy.com/media/9rO5Aksmn0dHQKXJAu/giphy.gif',
     ],
   },
 ];
