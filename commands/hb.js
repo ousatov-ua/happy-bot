@@ -2,7 +2,7 @@ export const HB_TIME_ZONE = 'Europe/Kyiv';
 
 export const HB_TEMPLATES = [
   {
-    name: 'Birthday Card',
+    name: 'Листівка',
     title: '🎂 З днем народження, Олежик!',
     description: [
       'Сьогодні день Олежика: більше радості, менше багів, максимум тепла.\n\nНехай рік буде яскравим, легким і дуже твоїм.',
@@ -32,19 +32,19 @@ export const HB_TEMPLATES = [
     ],
   },
   {
-    name: 'Birthday Loot',
-    title: '🎁 Birthday loot drop',
+    name: 'Святковий лут',
+    title: '🎁 Святковий loot drop',
     description: [
-      'Олежик відкрив святковий лутбокс:\n\n🟣 Epic cake\n🟡 Legendary luck\n🔵 Rare good mood\n✨ Mythic birthday aura\n\nЗ днем народження!',
-      'Birthday chest unlocked:\n\n🎂 Cake x1\n🎉 Радість x100\n🎮 Удача x50\n💛 Теплі побажання x999\n\nОлежик, це твій день!',
+      'Олежик відкрив святковий лутбокс:\n\n🟣 Epic cake\n🟡 Legendary luck\n🔵 Rare good mood\n✨ Mythic святкова aura\n\nЗ днем народження!',
+      'Святкова chest unlocked:\n\n🎂 Торт x1\n🎉 Радість x100\n🎮 Удача x50\n💛 Теплі побажання x999\n\nОлежик, це твій день!',
     ],
     images: [
       'https://media.giphy.com/media/az6FZXG85pVyasjpgS/giphy.gif',
     ],
   },
   {
-    name: 'Birthday Spell',
-    title: '✨ Birthday spell cast',
+    name: 'Святкове закляття',
+    title: '✨ Святковий spell cast',
     description: [
       'Закляття активовано:\n\n«Нехай Олежик має здоровʼя, радість, удачу і торт без кулдауну».\n\nЕфект триває весь рік.',
       'Магія дня народження спрацювала.\n\n+100 до настрою\n+100 до сил\n+100 до щасливих випадковостей\n\nОлежик, з днем народження!',
@@ -54,21 +54,21 @@ export const HB_TEMPLATES = [
     ],
   },
   {
-    name: 'Birthday Mission',
-    title: '🎯 Birthday mission',
+    name: 'Святкова місія',
+    title: '🎯 Святкова місія',
     description: [
-      'Mission objective:\n1. Прийняти привітання\n2. Зʼїсти щось смачне\n3. Насолодитись днем\n4. Стати ще крутішим\n\nStatus: already in progress, Олежик.',
-      'Special quest unlocked for Олежик:\n\nMain quest: святкувати.\nSide quest: посміхатись.\nBonus objective: отримати торт.\n\nReward: легендарний рік попереду.',
+      'Цілі місії:\n1. Прийняти привітання\n2. Зʼїсти щось смачне\n3. Насолодитись днем\n4. Стати ще крутішим\n\nСтатус: уже in progress, Олежик.',
+      'Особливий quest unlocked для Олежика:\n\nГоловний quest: святкувати.\nПобічний quest: посміхатись.\nБонусна ціль: отримати торт.\n\nReward: легендарний рік попереду.',
     ],
     images: [
       'https://media.giphy.com/media/a8wmKpMbRDEllUZ464/giphy.gif',
     ],
   },
   {
-    name: 'Birthday Fortune',
-    title: '🔮 Birthday fortune',
+    name: 'Святкове пророцтво',
+    title: '🔮 Святкове пророцтво',
     description: [
-      'Пророцтво каже: Олежика чекає рік з хорошими людьми, вдалими моментами і дуже сильним birthday power.\n\nЗ днем народження!',
+      'Пророцтво каже: Олежика чекає рік з хорошими людьми, вдалими моментами і дуже сильною святковою power.\n\nЗ днем народження!',
       'Куля передбачень показує:\n\n🎂 торт поруч\n🎁 сюрпризи близько\n✨ удача активна\n💛 радість стабільна\n\nОлежик, хай так і буде!',
     ],
     images: [
@@ -76,41 +76,41 @@ export const HB_TEMPLATES = [
     ],
   },
   {
-    name: 'Birthday Raid',
-    title: '⚔️ Birthday raid victory',
+    name: 'Святковий рейд',
+    title: '⚔️ Перемога у святковому raid',
     description: [
       'Raid boss defeated: ще один рік пройдено красиво.\n\nLoot:\n🎂 святковий торт\n🎁 купа сюрпризів\n💛 люди поруч\n✨ legendary mood\n\nОлежик, з днем народження!',
-      'Party cleared the birthday raid.\n\nОлежик отримує MVP за витримку, гумор і +1 до легендарності.\n\nНехай наступний рік буде easy mode з epic rewards.',
+      'Party зачистила святковий raid.\n\nОлежик отримує MVP за витримку, гумор і +1 до легендарності.\n\nНехай наступний рік буде easy mode з epic rewards.',
     ],
     images: [
       'https://media.giphy.com/media/ESR5LqfuZzN9usQhLk/giphy.gif',
     ],
   },
   {
-    name: 'Birthday Patch Notes',
-    title: '🛠️ Birthday patch notes',
+    name: 'Святкові patch notes',
+    title: '🛠️ Святкові patch notes',
     description: [
-      'Version Олежик+1 released.\n\nAdded:\n✨ більше удачі\n🎮 більше перемог\n🍰 більше смачного\n💛 більше тепла\n\nFixed: нестача святкового настрою.',
-      'Birthday update installed.\n\nBuffs:\n+20 до енергії\n+50 до радості\n+100 до харизми\n+999 до birthday power\n\nKnown issue: торт може швидко зникнути.',
+      'Версія Олежик+1 released.\n\nДодано:\n✨ більше удачі\n🎮 більше перемог\n🍰 більше смачного\n💛 більше тепла\n\nFixed: нестача святкового настрою.',
+      'Святковий update installed.\n\nBuffs:\n+20 до енергії\n+50 до радості\n+100 до харизми\n+999 до святкової power\n\nВідомий issue: торт може швидко зникнути.',
     ],
     images: [
       'https://media.giphy.com/media/VEKxys8zRowZaCTJ9C/giphy.gif',
     ],
   },
   {
-    name: 'Birthday Critical Hit',
-    title: '💥 Birthday critical hit',
+    name: 'Святковий крит',
+    title: '💥 Святковий critical hit',
     description: [
       'Critical hit по буденності!\n\nОлежик отримує день, повний сміху, тостів, подарунків і приємних дрібниць.\n\nЗ днем народження!',
-      'Birthday combo activated:\n🎉 confetti strike\n🎂 cake slash\n🎁 gift burst\n✨ happiness crit\n\nОлежик, хай сьогодні все попадає в ціль.',
+      'Святкове combo activated:\n🎉 confetti strike\n🎂 cake slash\n🎁 gift burst\n✨ happiness crit\n\nОлежик, хай сьогодні все попадає в ціль.',
     ],
     images: [
       'https://media.giphy.com/media/DXhmNiA8F1i4fLnMdb/giphy.gif',
     ],
   },
   {
-    name: 'Birthday Co-op',
-    title: '🤝 Birthday co-op party',
+    name: 'Святковий co-op',
+    title: '🤝 Святкова co-op party',
     description: [
       'Co-op lobby зібрано.\n\nМісія команди: зробити день Олежика теплим, веселим і незабутнім.\n\nГотовність: 100%.',
       'Олежик, сьогодні весь party chat бажає здоровʼя, радості, перемог і стабільного high roll у житті.\n\nЗ днем народження!',
@@ -120,10 +120,10 @@ export const HB_TEMPLATES = [
     ],
   },
   {
-    name: 'Birthday Speedrun',
-    title: '⏱️ Birthday speedrun',
+    name: 'Святковий speedrun',
+    title: '⏱️ Святковий speedrun',
     description: [
-      'Birthday speedrun route:\n1. Прокинутись легендою\n2. Прийняти привітання\n3. Знайти торт\n4. Насолодитись днем\n\nОлежик already PB.',
+      'Маршрут святкового speedrun:\n1. Прокинутись легендою\n2. Прийняти привітання\n3. Знайти торт\n4. Насолодитись днем\n\nОлежик уже PB.',
       'New personal best unlocked: Олежик прожив ще один крутий рік.\n\nНаступний маршрут: більше щастя, менше турбот, більше перемог.',
     ],
     images: [
@@ -131,8 +131,8 @@ export const HB_TEMPLATES = [
     ],
   },
   {
-    name: 'Birthday Tavern',
-    title: '🍻 Birthday tavern quest',
+    name: 'Святкова таверна',
+    title: '🍻 Святковий tavern quest',
     description: [
       'У таверні оголошено свято: сьогодні день Олежика.\n\nНехай бард співає голосніше, друзі сміються частіше, а рік приносить тільки добрі квести.',
       'Quest giver каже:\n\n«Передайте Олежику здоровʼя, удачу, теплі обійми і торт».\n\nReward: щасливий рік попереду.',
